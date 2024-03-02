@@ -39,10 +39,10 @@ One other challenge I ran into was the throttle for the bike. I initially wanted
 I know you want to see more pics of the bike and build, so without further ado, here are a bunch of pics of the build process and finished bike.
 
 <div class="gallery" data-columns="3">
-	<img src="/images/projects/ssebike/ssebike-1.jpg">
-	<img src="/images/projects/ssebike/ssebike-2.jpg">
-	<img src="/images/projects/ssebike/ssebike-3.jpg">
-	<img src="/images/projects/ssebike/ssebike-4.jpg">
+  <img src="/images/projects/ssebike/ssebike-1.jpg">
+  <img src="/images/projects/ssebike/ssebike-2.jpg">
+  <img src="/images/projects/ssebike/ssebike-3.jpg">
+  <img src="/images/projects/ssebike/ssebike-4.jpg">
   <img src="/images/projects/ssebike/ssebike-5.jpg">
   <img src="/images/projects/ssebike/ssebike-6.jpg">
   <img src="/images/projects/ssebike/ssebike-7.jpg">

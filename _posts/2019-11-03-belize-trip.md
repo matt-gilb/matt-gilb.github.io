@@ -20,6 +20,8 @@ featured_image: '/images/posts/belize_hero.jpg'
 
 ### Diving
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Kjgr9PoWcQI?si=BWWpU0bELZ1f6_py" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### Motorcycle Touring
 
 ## Becoming SCUBA certified
