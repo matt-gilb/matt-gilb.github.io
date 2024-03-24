@@ -8,17 +8,63 @@ featured_image: '/images/posts/bdr_01/bdr_hero.jpg'
 
 # Overview
 
-Becca and I spent a week on the island of Bonaire diving with [Buddy Dive Resort](https://buddydive.com) for my birthday.
+Becca and I spent a week on the island of Bonaire diving with [Buddy Dive Resort](https://buddydive.com) for my birthday. This was our first time to the island of Bonaire. We stayed in a suite at the resort which had a kitchen, living room, and private patio. It was really nice to have all these amenities in addition to everything the resort offered. I think we only ended up cooking for ourselves twice though.
 
-## Dive Sites and Conditions
+## Conditions
+
+Conditions underwater were phenomenal with 60-120 foot visibility the whole time. Above the water we had clear skies, with daytime high temps ranging from 92ºF to 98ºF, with 100ºF on one day.
+
+## Dive Sites
+
+* Saturday:
+  * Buddy Reef
+* Sunday:
+  * Buddy Reef (2x)
+* Monday:
+  * Knife
+* Tuesday:
+  * Karpata
+  * 1000 Steps
+  * Hands Off
+* Wednesday:
+  * Joanne's Sunchi
+  * Ebo's Special
+  * Hilma Hooker
+* Thursday:
+  * Captain Don's
+  * Bon Adventure
+  * La Matcha
+* Friday:
+  * Country Gardens
+  * Small Wall
 
 ## Dive Operator and experience
 
-The divemasters at Buddy Dive Resort are awesome. They were all very friendly and knowledgeable. The started each dive with a thorough briefing and description of the site. The boats were never packed, and I think the biggest group we had was eight. We even had a couple dives where Becca and I were the only divers on the boat (other than the crew).
+The divemasters at Buddy Dive Resort are awesome. They were all very friendly and knowledgeable. They started each dive with a thorough briefing and description of the site. The boats were never packed, and I think the biggest group we had was eight. We even had a couple afternoon dives where Becca and I were the only divers on the boat, other than the crew.
 
 ---
 
-# Environment and critters
+# Dive Log
+
+## Saturday — Day 1
+
+We arrived at BDR in the afternoon, got our gear unpacked, and did a required checkout dive as the sun set. We spent some time in the shallows checking buoyancy and making sure all our equipment functioned correctly. Then we made our way out to the reef where there is a gentle slope running from about 20-feet down to 100+ feet at the bottom. We were able to watch the light fade underwater, and all of the night critters come out.
+
+## Sunday — Day 2
+
+We missed the window to get in on the boat dives for our first day, so we did 2 dives at the resort on their house reef. This actually worked out pretty well as it gave us plenty of time to do stuff on our own schedule.
+
+## Monday — Day 3
+
+Our first boat dive with BDR wasn't until the afternoon, so we started the day running some errands, getting some groceries, and exploring. Then we hopped on the boat and headed over to Klien Bonaire (little bonaire) and dove the site called Knife.
+
+## Tuesday — Day 4
+
+## Wednesday — Day 5
+
+## Thursday — Day 6
+
+## Friday — Day 7
 
 ---
 

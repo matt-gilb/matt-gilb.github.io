@@ -147,7 +147,9 @@ The last dive of the trip at Sandy Slope was my 100th dive. It wasn't as epic as
 
 # Photos and Video
 
-Here's a bunch of the photos I took. I'll add a video to this post soon.
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lLmdOSnFaYg?si=E2tafCrsJMwZJuxG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Here's a bunch of the photos from the trip.
 
 <div class="gallery" data-columns="4">
     <img src="/images/posts/ba3/GOPR0234.jpg">
