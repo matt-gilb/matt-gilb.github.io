@@ -73,10 +73,10 @@ color_settings:
   error_color: '#D64541'
 
 font_settings:
-  font_embed: '<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">'
-  title_font: '"Montserrat", sans-serif'
-  body_font: '"Montserrat", sans-serif'
-  regular_weight: 400
+  font_embed: '<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">'
+  title_font: '"Josefin Sans", sans-serif'
+  body_font: '"Quicksand", sans-serif'
+  regular_weight: 300
   bold_weight: 600
   site_title:
     small_size: 25
@@ -133,9 +133,9 @@ font_settings:
     letter_spacing: 0
     line_height: 1.6
   p:
-    small_size: 18
-    medium_size: 20
-    large_size: 22
+    small_size: 16
+    medium_size: 18
+    large_size: 20
     weight: 400
     letter_spacing: 0
     line_height: 1.6
