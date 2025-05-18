@@ -1,9 +1,10 @@
 ---
+layout: post
 title: 'Dive Trip Report: Key Largo'
-subtitle: 'Key Largo, Florida Keys, Florida, USA'
 date: 2022-07-30
-description: 'My story and images from diving with Diventures and Rainbow Reef Dive Center off Key Largo.'
-featured_image: '/images/posts/rr_key_largo/rainbow_reef_hero.jpg'
+description: My story and images from diving with Diventures and Rainbow Reef Dive Center off Key Largo.
+image: "/images/posts/rr_key_largo/rainbow_reef_hero.jpg"
+tags:   [Scuba, Travel, Reports]
 ---
 
 # Overview

@@ -1,9 +1,10 @@
 ---
-title: 'Dive Trip Report: Southwater Caye reefs'
-subtitle: 'Southwater Caye Reserve reefs, Hopkins, Belize'
-date: 2022-03-12
-description: 'My story and images from diving with Becca while staying at Hamanasi Resort.'
-featured_image: '/images/posts/swc_hopkins/hamanasi_hero.jpg'
+layout: post
+title:  'Dive Trip Report: Hamanasi Resort, Belize'
+description: Diving with Hamanasi Resort in the Southwater Caye Reserve reefs located off of Hopkins, Belize
+date:   2022-03-12
+image:  '/images/posts/swc_hopkins/hamanasi_hero.jpg'
+tags:   [Scuba, Travel, Reports]
 ---
 
 # Overview

@@ -1,9 +1,10 @@
 ---
-title: 'Learning Git'
-subtitle: 'Coding quick tip'
-date: 2016-08-01
+layout: post
+title:  Learning Git
 description: This is a really fast and easy resource to get started learning Git.
-featured_image: '/images/posts/learn_git.jpg'
+date:   2016-08-01
+image:  '/images/posts/learn_git.jpg'
+tags:   [Technology, Programming]
 ---
 
 ## Here's a coding quick tip for today

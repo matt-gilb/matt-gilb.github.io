@@ -1,9 +1,10 @@
 ---
-title: "The Return of the Blog"
-subtitle: "Updating content more often"
-date: 2016-08-21
+layout: post
+title:  The Return of the Blog
 description: I haven't done a very good job of keeping this blog up to date, but I've had a lot going on.
-featured_image: "/images/posts/basic_news.jpg"
+date:   2016-08-21
+image:  '/images/posts/basic_news.jpg'
+tags:   [News]
 ---
 
 Well, I haven't done a very good job of keeping this blog up to date, but I've had a lot going on. I'll be back-filling stories onto the blog now, so keep your eyes out for many more updates.

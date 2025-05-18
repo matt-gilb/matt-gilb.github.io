@@ -1,16 +1,17 @@
 ---
-title: 'Dive Trip Report: Ultimate Whale Sharks'
-subtitle: 'Sea of Cortez, Mexico'
-date: 2024-07-27
-description: 'Our first trip to the Sea of Cortez, aboard the Nautilus Belle Amie liveaboard.'
-featured_image: '/images/posts/uws/hero.jpg'
+layout: post
+title:  'Dive Trip Report: Ultimate Whale Sharks'
+description: Our first trip to the Sea of Cortez, aboard the Nautilus Belle Amie liveaboard.
+date:   2024-07-27
+image:  '/images/posts/uws/hero.jpg'
+tags:   [Scuba, Travel, Reports]
 ---
 
 # Overview
 
 Becca and I joined the crew of the Nautilus Belle Amie for their "[Ultimate Whale Sharks](https://nautilusliveaboards.com/destination-ultimate-whale-sharks/){:target="_blank"}" adventure trip in the Sea of Cortez. We chose the end of July into the first days of August because this seemed like a good time to catch both the end of the springtime sea-life activity, along with the start of the summertime sea-life activity. That plan worked for the most part and we saw tons of amazing sea-life from little nudi's to whales, and lots between.
 
-We flew direct from ATL to SJD (4-hours) and used Sealine Cabo Transfers to get to Cabo San Lucas (45 minutes) where the rendezvous location was (SeeCreatures dive shop). Getting through San José Del Cabo airport was a breeze. The worst part was waiting for our bags to come out on the carousel. We breezed through immigration and Becca got a green light when pressing the "random search" button at customs, so we walked right through all of that too. After a speed-walk through the gauntlet of time-share sales people, we met our driver right outside the doors. The drive to SeeCreatures in Cabo San Lucas was scenic, comfortable, and uneventful. The car dropped us off at the front door of the shop.
+We flew direct from ATL to SJD (4-hours) and used [Sealine Cabo Transfers](https://sealinecabotransfers.com){:target="_blank"} to get to Cabo San Lucas (45 minutes) where the [SeeCreatures](https://seecreaturesbaja.com){:target="_blank"} dive shop rendezvous location was. Getting through San José Del Cabo airport was a breeze. The worst part was waiting for our bags to come out on the carousel. We breezed through immigration and Becca got a green light when pressing the "random search" button at customs, so we walked right through all of that too. After a speed-walk through the gauntlet of time-share sales people, we met our driver right outside the doors. The drive to SeeCreatures in Cabo San Lucas was scenic, comfortable, and uneventful. The car dropped us off at the front door of the shop.
 
 After dropping our bags off, signing the paperwork and showing our c-cards, we had a few hours to kill so we strolled around to look at the sites in Cabo San Lucas. Becca had found a nice looking vegan restaurant across from SeeCreaturs called EPIC, but they were closed (on vacation themselves!) so we looked around and ultimately got some veggie tacos at a spot called Taco Loco, and then went to look at the marina.
 
@@ -107,55 +108,57 @@ The captain reported that there were probably 10-20 whales spread out over a cou
 
 Here are a bunch of photos from the trip.
 
-<div class="gallery" data-columns="4">
-    <img src="/images/posts/uws/uws_soc_1.jpg">
-    <img src="/images/posts/uws/uws_soc_2.jpg">
-    <img src="/images/posts/uws/uws_soc_3.jpg">
-    <img src="/images/posts/uws/uws_soc_4.jpg">
-    <img src="/images/posts/uws/uws_soc_5.jpg">
-    <img src="/images/posts/uws/uws_soc_6.jpg">
-    <img src="/images/posts/uws/uws_soc_7.jpg">
-    <img src="/images/posts/uws/uws_soc_8.jpg">
-    <img src="/images/posts/uws/uws_soc_9.jpg">
-    <img src="/images/posts/uws/uws_soc_10.jpg">
-    <img src="/images/posts/uws/uws_soc_11.jpg">
-    <img src="/images/posts/uws/uws_soc_12.jpg">
-    <img src="/images/posts/uws/uws_soc_13.jpg">
-    <img src="/images/posts/uws/uws_soc_14.jpg">
-    <img src="/images/posts/uws/uws_soc_15.jpg">
-    <img src="/images/posts/uws/uws_soc_16.jpg">
-    <img src="/images/posts/uws/uws_soc_17.jpg">
-    <img src="/images/posts/uws/uws_soc_18.jpg">
-    <img src="/images/posts/uws/uws_soc_19.jpg">
-    <img src="/images/posts/uws/uws_soc_20.jpg">
-    <img src="/images/posts/uws/uws_soc_21.jpg">
-    <img src="/images/posts/uws/uws_soc_22.jpg">
-    <img src="/images/posts/uws/uws_soc_23.jpg">
-    <img src="/images/posts/uws/uws_soc_24.jpg">
-    <img src="/images/posts/uws/uws_soc_25.jpg">
-    <img src="/images/posts/uws/uws_soc_26.jpg">
-    <img src="/images/posts/uws/uws_soc_27.jpg">
-    <img src="/images/posts/uws/uws_soc_28.jpg">
-    <img src="/images/posts/uws/uws_soc_32.jpg">
-    <img src="/images/posts/uws/uws_soc_30.jpg">
-    <img src="/images/posts/uws/uws_soc_31.jpg">
-    <img src="/images/posts/uws/uws_soc_33.jpg">
-    <img src="/images/posts/uws/uws_soc_34.jpg">
-    <img src="/images/posts/uws/uws_soc_35.jpg">
-    <img src="/images/posts/uws/uws_soc_36.jpg">
-    <img src="/images/posts/uws/uws_soc_39.jpg">
-    <img src="/images/posts/uws/uws_soc_37.jpg">
-    <img src="/images/posts/uws/uws_soc_38.jpg">
-    <img src="/images/posts/uws/uws_soc_40.jpg">
-    <img src="/images/posts/uws/uws_soc_41.jpg">
-    <img src="/images/posts/uws/uws_soc_42.jpg">
-    <img src="/images/posts/uws/uws_soc_43.jpg">
-    <img src="/images/posts/uws/uws_soc_44.jpg">
-    <img src="/images/posts/uws/uws_soc_45.jpg">
-    <img src="/images/posts/uws/uws_soc_46.jpg">
-    <img src="/images/posts/uws/uws_soc_47.jpg">
-    <img src="/images/posts/uws/uws_soc_48.jpg">
-    <img src="/images/posts/uws/uws_soc_52.jpg">
-    <img src="/images/posts/uws/uws_soc_49.jpg">
-    <img src="/images/posts/uws/uws_soc_50.jpg">
+<div class="gallery-box">
+    <div class="gallery">
+        <img src="/images/posts/uws/uws_soc_1.jpg">
+        <img src="/images/posts/uws/uws_soc_2.jpg">
+        <img src="/images/posts/uws/uws_soc_3.jpg">
+        <img src="/images/posts/uws/uws_soc_4.jpg">
+        <img src="/images/posts/uws/uws_soc_5.jpg">
+        <img src="/images/posts/uws/uws_soc_6.jpg">
+        <img src="/images/posts/uws/uws_soc_7.jpg">
+        <img src="/images/posts/uws/uws_soc_8.jpg">
+        <img src="/images/posts/uws/uws_soc_9.jpg">
+        <img src="/images/posts/uws/uws_soc_10.jpg">
+        <img src="/images/posts/uws/uws_soc_11.jpg">
+        <img src="/images/posts/uws/uws_soc_12.jpg">
+        <img src="/images/posts/uws/uws_soc_13.jpg">
+        <img src="/images/posts/uws/uws_soc_14.jpg">
+        <img src="/images/posts/uws/uws_soc_15.jpg">
+        <img src="/images/posts/uws/uws_soc_16.jpg">
+        <img src="/images/posts/uws/uws_soc_17.jpg">
+        <img src="/images/posts/uws/uws_soc_18.jpg">
+        <img src="/images/posts/uws/uws_soc_19.jpg">
+        <img src="/images/posts/uws/uws_soc_20.jpg">
+        <img src="/images/posts/uws/uws_soc_21.jpg">
+        <img src="/images/posts/uws/uws_soc_22.jpg">
+        <img src="/images/posts/uws/uws_soc_23.jpg">
+        <img src="/images/posts/uws/uws_soc_24.jpg">
+        <img src="/images/posts/uws/uws_soc_25.jpg">
+        <img src="/images/posts/uws/uws_soc_26.jpg">
+        <img src="/images/posts/uws/uws_soc_27.jpg">
+        <img src="/images/posts/uws/uws_soc_28.jpg">
+        <img src="/images/posts/uws/uws_soc_32.jpg">
+        <img src="/images/posts/uws/uws_soc_30.jpg">
+        <img src="/images/posts/uws/uws_soc_31.jpg">
+        <img src="/images/posts/uws/uws_soc_33.jpg">
+        <img src="/images/posts/uws/uws_soc_34.jpg">
+        <img src="/images/posts/uws/uws_soc_35.jpg">
+        <img src="/images/posts/uws/uws_soc_36.jpg">
+        <img src="/images/posts/uws/uws_soc_39.jpg">
+        <img src="/images/posts/uws/uws_soc_37.jpg">
+        <img src="/images/posts/uws/uws_soc_38.jpg">
+        <img src="/images/posts/uws/uws_soc_40.jpg">
+        <img src="/images/posts/uws/uws_soc_41.jpg">
+        <img src="/images/posts/uws/uws_soc_42.jpg">
+        <img src="/images/posts/uws/uws_soc_43.jpg">
+        <img src="/images/posts/uws/uws_soc_44.jpg">
+        <img src="/images/posts/uws/uws_soc_45.jpg">
+        <img src="/images/posts/uws/uws_soc_46.jpg">
+        <img src="/images/posts/uws/uws_soc_47.jpg">
+        <img src="/images/posts/uws/uws_soc_48.jpg">
+        <img src="/images/posts/uws/uws_soc_52.jpg">
+        <img src="/images/posts/uws/uws_soc_49.jpg">
+        <img src="/images/posts/uws/uws_soc_50.jpg">
+    </div>
 </div>

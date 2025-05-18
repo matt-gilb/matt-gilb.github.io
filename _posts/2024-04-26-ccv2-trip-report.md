@@ -1,9 +1,10 @@
 ---
-title: 'Dive Trip Report: CoCo View Resort'
-subtitle: 'Roatan, Honduras'
-date: 2024-04-26
-description: 'Our second trip to Roatan to go diving with CoCo View Resort.'
-featured_image: '/images/posts/ccv_roatan_02/hero.jpg'
+layout: post
+title:  'Dive Trip Report: CoCo View Resort, 2'
+description: Our second trip to Roatan to go diving with CoCo View Resort.
+date:   2024-04-26
+image:  '/images/posts/ccv_roatan_02/hero.jpg'
+tags:   [Scuba, Travel, Reports]
 ---
 
 # Overview
@@ -59,17 +60,19 @@ Here's a map of all the places we have dived on Roatan:
 
 CoCo View has some artisticly drawn maps of the sites that I wanted to share as well.
 
-<div class="gallery" data-columns="1">
-  <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_1.jpg">
-  <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_2.jpg">
-  <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_3.jpg">
-  <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_4.jpg">
-  <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_5.jpg">
-  <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_6.jpg">
-  <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_7.jpg">
-  <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_8.jpg">
-  <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_9.jpg">
-  <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_10.jpg">
+<div class="gallery-box">
+    <div class="gallery">
+        <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_1.jpg">
+        <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_2.jpg">
+        <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_3.jpg">
+        <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_4.jpg">
+        <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_5.jpg">
+        <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_6.jpg">
+        <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_7.jpg">
+        <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_8.jpg">
+        <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_9.jpg">
+        <img src="/images/posts/ccv_roatan_02/ccv_dive_sites_10.jpg">
+    </div>
 </div>
 
 ---
@@ -116,7 +119,8 @@ The final swim-home dive was again on Newman's wall. Becca and I really stretche
 
 Here are a bunch of photos from the trip.
 
-<div class="gallery" data-columns="4">
+<div class="gallery-box">
+    <div class="gallery">
     <img src="/images/posts/ccv_roatan_02/ccv02_gallery2.jpg">
     <img src="/images/posts/ccv_roatan_02/ccv02_gallery3.jpg">
     <img src="/images/posts/ccv_roatan_02/ccv02_gallery4.jpg">

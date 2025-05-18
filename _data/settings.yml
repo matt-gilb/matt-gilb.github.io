@@ -1,158 +1,92 @@
-basic_settings:
-  site_title: Matt Gilbert
-  favicon_image: /images/favicon.png
+---
+#-------------------------------
+# Site Settings
+title: Matt Gilbert
+logo: "/images/logo.png"
+description: Matt Gilbert - A personal blog about a geek who likes sci-fi, programming, electronics, bikes, and scuba diving.
 
-header_settings:
-  logo_image: /images/logo.png
-  logo_width: 80
+#-------------------------------
+# Navigation Settings
+menu-settings:
+  menu-items:
+    - title: "Home"
+      url: "/"
+    - title: "About"
+      url: "/about/"
+    - title: "Contact Me"
+      url: "/contact/"
+    - title: "Resume"
+      url: "/resume/"
 
-menu_settings:
-  menu_items:
-    - title: 'Blog'
-      url: '/'
-    - title: 'Projects'
-      url: '/projects/'
-    - title: 'About'
-      url: '/about'
-    - title: 'Contact'
-      url: '/contact'
+#-------------------------------
+# Author Settings
+author:
+  name: Matt Gilbert
+  avatar: "/images/mattg.png"
 
-footer_settings:
-  footer_tagline: The blog and project journal of Matt Gilbert
+#-------------------------------
+# Hero Settings
+hero:
+  title: Matt Gilbert
+  description: My thoughts, ideas, project journals, and dive trip reports.
+  image: "/images/home_hero.jpg"
 
-hero_settings:
-  overlay_opacity: 0.5
+#-------------------------------
+# Contact Settings
+contact:
+  email: xzbwdyro # Add your email for contact form
+  description: I want to hear from you! Fill out this form to send me an email. I will not store or collect your info or use your email address in any way other than to reply to your message. You will never get any spam from me.
 
-post_settings:
-  grid_spacing: 10
+# NOTE
+# Norlin theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
 
-contact_settings:
-  form_action: 'https://formspree.io/f/xzbwdyro'
-  confirmation_url: '/thanks'
-  email_subject: 'Contact form submission'
-  send_button_text: 'Send Message'
+#-------------------------------
+# Footer section
+social:
+  - {
+      icon: "fa-brands fa-youtube",
+      name: "Youtube",
+      link: "https://www.youtube.com/@mattgilbert8431",
+    }
+  - {
+      icon: "fa-brands fa-reddit",
+      name: "Reddit",
+      link: "https://www.reddit.com/user/matt_gilbert/",
+    }
+  - {
+      icon: "fa-brands fa-github",
+      name: "Github",
+      link: "https://github.com/matt-gilb",
+    }
+  - {
+      icon: "fa-brands fa-linkedin",
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/mgilbert/",
+    }
+  - {
+      icon: "fa-brands fa-mastodon",
+      name: "Mastodon",
+      link: "https://mastodon.social/@mattgilbert",
+    }
+  - {
+      icon: "fa-brands fa-bluesky",
+      name: "Bluesky",
+      link: "https://bsky.app/profile/mattg01.bsky.social",
+    }
 
-social_settings:
-  facebook_url: ''
-  twitter_url: ''
-  instagram_url: ''
-  snapchat_url: ''
-  youtube_url: 'https://www.youtube.com/channel/UCSGkZZpR1pLkGex0BZEuV4A'
-  google-plus_url: ''
-  vimeo_url: ''
-  pinterest_url: ''
-  medium_url: ''
-  quora_url: ''
-  amazon_url: ''
-  apple_url: ''
-  android_url: ''
-  tumblr_url: ''
-  dribbble_url: ''
-  behance_url: ''
-  deviantart_url: ''
-  github_url: 'https://github.com/matt-gilb'
-  reddit_url: 'https://www.reddit.com/user/matt_gilbert'
-  flickr_url: ''
-  etsy_url: ''
-  kickstarter_url: ''
-  soundcloud_url: ''
-  spotify_url: ''
-  bandcamp_url: ''
-  linkedin_url: 'https://www.linkedin.com/in/mgilbert/'
+# Example of adding a new link to the footer - {icon: "fa-brands fa-mastodon", name: "Mastodon", link: "https://mastodon.social/"}
+# Other icons can be found at https://fontawesome.com/icons
 
-color_settings:
-  background_color: '#ECEFF4'
-  background_alt_color: '#E5E9F0'
-  text_dark_color: '#2E3440'
-  text_medium_color: '#434C5E'
-  text_light_color: '#4C566A'
-  accent_color: '#88C0D0'
-  border_color: '#D8DEE9'
-  hero_background_color: '#3B4252'
-  hero_text_color: '#ECEFF4'
-  error_color: '#D64541'
+#-------------------------------
+# Comment Section (Disqus)
+disqus-identifier: # Add your shortname for Disqus Comment. For example anvodstudio-demo
 
-font_settings:
-  font_embed: '<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">'
-  title_font: '"Josefin Sans", sans-serif'
-  body_font: '"Quicksand", sans-serif'
-  regular_weight: 300
-  bold_weight: 600
-  site_title:
-    small_size: 25
-    medium_size: 30
-    large_size: 35
-    weight: 700
-    letter_spacing: -0.02
-  menu:
-    small_size: 30
-    medium_size: 15
-    large_size: 17
-    weight: 600
-    letter_spacing: 0
-  h1:
-    small_size: 35
-    medium_size: 45
-    large_size: 60
-    weight: 700
-    letter_spacing: -0.03
-    line_height: 1.2
-  h2:
-    small_size: 22
-    medium_size: 30
-    large_size: 35
-    weight: 700
-    letter_spacing: -0.02
-    line_height: 1.2
-  h3:
-    small_size: 22
-    medium_size: 25
-    large_size: 30
-    weight: 600
-    letter_spacing: -0.02
-    line_height: 1.3
-  h4:
-    small_size: 17
-    medium_size: 22
-    large_size: 22
-    weight: 700
-    letter_spacing: 0
-    line_height: 1.6
-  h5:
-    small_size: 17
-    medium_size: 20
-    large_size: 20
-    weight: 700
-    letter_spacing: 0
-    line_height: 1.6
-  h6:
-    small_size: 17
-    medium_size: 20
-    large_size: 20
-    weight: 700
-    letter_spacing: 0
-    line_height: 1.6
-  p:
-    small_size: 16
-    medium_size: 18
-    large_size: 20
-    weight: 400
-    letter_spacing: 0
-    line_height: 1.6
-  blockquote:
-    small_size: 25
-    medium_size: 35
-    large_size: 45
-    weight: 300
-    letter_spacing: -0.02
-    line_height: 1.6
-  buttons:
-    weight: 600
-    letter_spacing: 0
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
 
-advanced_settings:
-  ajax_loading: true
-  analytics_code: ""
-  custom_styles: ""
-  header_js: ""
-  footer_js: ""
+#-------------------------------
+# Newsletter
+mailchimp: enable # To enable the mailchimp form, use the value 'enable'. To disable the form, leave the field blank.
+mailchimp-identifier: mattgilbert.us3.list-manage.com/subscribe/post?u=d3eefd524203f624c236c441a&amp;id=445854a897&amp;f_id=00313ae2f0 # Add your MailChimp form identifier. For example - gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp
+mailchimp-button-text: Join

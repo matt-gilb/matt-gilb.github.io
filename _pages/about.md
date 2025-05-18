@@ -1,8 +1,8 @@
 ---
+layout: page
 title: About me
-subtitle: Learn a little bit about my background and interests as well as why I have this site.
-description: Learn a little bit about my background and interests as well as why I have this site.
-featured_image: /images/pages/about_hero.jpg
+permalink: /about/
+image: /images/pages/about_hero.jpg
 ---
 
 ## About Matt
@@ -42,11 +42,11 @@ Since all good creations start with a foundation, that's where I'll start too.
 
 #### The foundation
 
-This site is built using a static site generator called [Jekyll](https://jekyllrb.com), and is hosted on [GitHub Pages](https://pages.github.com).
+This site is built using a static site generator called [Jekyll](https://jekyllrb.com){:target="_blank"}, and is hosted on [GitHub Pages](https://pages.github.com){:target="_blank"}.
 
 #### The style
 
-This site currently uses a lightly modified version of the Jekyll site theme [Personal](https://jekyllthemes.io/theme/personal-website-jekyll-theme) by the excellent designers at [JekyllThemes](https://jekyllthemes.io/). The theme is so good out of the box, that all I really had to do was modify the color palate and add my MG&trade; logo.
+This site currently uses a lightly modified version of the Jekyll site theme [Norlin](https://jekyllthemes.io/theme/norlin-dark-blog-jekyll-theme){:target="_blank"} by the excellent designers at [JekyllThemes](https://jekyllthemes.io/){:target="_blank"}. The theme is so good out of the box, that all I really had to do was modify the color palate and add my MG&trade; logo.
 
 ---
 
@@ -54,4 +54,4 @@ This site currently uses a lightly modified version of the Jekyll site theme [Pe
 
 I'd love to hear from you! You can reach out to me directly by using the contact form here on the site. You can also follow my other online activity by following any of my social links in the footer.
 
-<a href="https://mattgilbert.co/contact" class="button button--large">Contact Me</a>
+<a href="{{ site.url }}/contact" class="button button--primary">Contact Me</a>

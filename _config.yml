@@ -1,56 +1,29 @@
-site: Matt Gilbert
+---
+#-------------------------------
+# General Site Settings
+baseurl: "" # The subpath of your site, e.g. /blog
+url: "https://mattgilbert.co" # The base hostname & protocol for your site, e.g. http://example.com
 
-url: mattgilbert.co
-baseurl:
-
-collections:
-  pages:
-    output: true
-    permalink: /:name
-  posts:
-    output: true
-    permalink: /blog/:slug
-  projects:
-    output: true
-    permalink: /project/:slug
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-
+#-------------------------------
+# Build settings
 markdown: kramdown
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-sass:
-  style: compressed
-
+permalink: /:title
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-paginate: 6
-paginate_path: "/blog/page:num/"
+paginate: 8
+paginate_path: "/page/:num"
+
+# Pages Path
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+sass:
+  style: compressed

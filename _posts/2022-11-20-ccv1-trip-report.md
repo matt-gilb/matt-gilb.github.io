@@ -1,9 +1,10 @@
 ---
+layout: post
 title: 'Dive Trip Report: CoCo View Resort'
-subtitle: 'Roatan, Honduras'
 date: 2022-11-20
 description: 'My story and images from a week of diving at CoCo View Resort.'
-featured_image: '/images/posts/ccv_roatan_01/ccv_hero.jpg'
+image: '/images/posts/ccv_roatan_01/ccv_hero.jpg'
+tags:  [Scuba, Travel, Reports]
 ---
 
 # Overview
@@ -89,24 +90,26 @@ This ended up being our final dive day, since Friday was rained-out. Like the di
 
 Here are a bunch of photos from the trip.
 
-<div class="gallery" data-columns="3">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery1.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery2.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery3.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery4.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery5.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery6.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery7.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery8.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery9.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery10.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery11.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery12.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery13.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery14.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery15.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery16.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery17.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery18.jpg">
-    <img src="/images/posts/ccv_roatan_01/ccv01_gallery19.jpg">
+<div class="gallery-box">
+    <div class="gallery">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery1.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery2.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery3.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery4.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery5.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery6.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery7.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery8.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery9.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery10.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery11.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery12.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery13.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery14.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery15.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery16.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery17.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery18.jpg">
+        <img src="/images/posts/ccv_roatan_01/ccv01_gallery19.jpg">
+    </div>
 </div>

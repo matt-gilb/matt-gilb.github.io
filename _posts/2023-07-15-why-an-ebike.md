@@ -1,9 +1,10 @@
 ---
-title: "The love of an eBike"
-subtitle: "Once you try an eBike, your outlook on life will be different."
-date: 2023-07-15
-description: "This story by Craig Mod reflects my own love of eBikes, and is so well written, I just had to share it here."
-featured_image: "/images/posts/besv1.jpg"
+layout: post
+title:  'Good read: "The love of an eBike"'
+description: This story by Craig Mod reflects my own love of eBikes, and is so well written, I just had to share it here.
+date:   2023-07-15
+image:  '/images/posts/besv1.jpg'
+tags:   [Links, eBikes]
 ---
 
 ## This is such a great story about why eBikes are awesome

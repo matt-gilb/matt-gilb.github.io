@@ -1,9 +1,10 @@
 ---
-title: 'Dive Trip Report: Belize Aggressor III Liveaboard'
-subtitle: 'Turneffe and Lighthouse Reef Atolls, Belize'
-date: 2024-02-24
-description: 'My story and images from a week of diving aboard the BA3 off the coast of Belize.'
-featured_image: '/images/posts/ba3/ba3_hero.jpg'
+layout: post
+title:  'Dive Trip Report: Belize Aggressor 3'
+description: My story and images from a week of diving aboard the Belize Aggressor III liveaboard off the coast of Belize.
+date:   2024-02-24
+image:  '/images/posts/ba3/ba3_hero.jpg'
+tags:   [Scuba, Travel, Reports]
 ---
 
 # Overview
@@ -24,19 +25,19 @@ This was by-far the most diving I've ever done on a single trip. The adage _"Div
 
 ## Crew:
 
-**Captain:** Monique  
-**Chef:** J.R.  
-**Sous Chef:** Randy  
-**Engineer:** Jay  
-**Instructor:** Pablo  
-**Instructor:** Shawn  
-**Night Watch:** Stewart  
+**Captain:** Monique
+**Chef:** J.R.
+**Sous Chef:** Randy
+**Engineer:** Jay
+**Instructor:** Pablo
+**Instructor:** Shawn
+**Night Watch:** Stewart
 
 ## Conditions:
 
-Avg. Air Temperature: 78º F  
-Water Temperature:  77-83º F  
-Avg. Visibility: 60-80 FT  
+Avg. Air Temperature: 78º F
+Water Temperature:  77-83º F
+Avg. Visibility: 60-80 FT
 
 ## Dive Sites
 
@@ -151,104 +152,106 @@ The last dive of the trip at Sandy Slope was my 100th dive. It wasn't as epic as
 
 Here's a bunch of the photos from the trip.
 
-<div class="gallery" data-columns="4">
-    <img src="/images/posts/ba3/GOPR0234.jpg">
-    <img src="/images/posts/ba3/IMG_4778.jpg">
-    <img src="/images/posts/ba3/IMG_4954.jpg">
-    <img src="/images/posts/ba3/IMG_5089.jpg">
-    <img src="/images/posts/ba3/IMG_5197.jpg">
-    <img src="/images/posts/ba3/IMG_7272.jpg">
-    <img src="/images/posts/ba3/P1010063.jpg">
-    <img src="/images/posts/ba3/P1010135.jpg">
-    <img src="/images/posts/ba3/IMG_2381.jpg">
-    <img src="/images/posts/ba3/IMG_4806.jpg">
-    <img src="/images/posts/ba3/IMG_4958.jpg">
-    <img src="/images/posts/ba3/IMG_5108.jpg">
-    <img src="/images/posts/ba3/IMG_5206.jpg">
-    <img src="/images/posts/ba3/IMG_7276.jpg">
-    <img src="/images/posts/ba3/P1010070.jpg">
-    <img src="/images/posts/ba3/P1010137.jpg">
-    <img src="/images/posts/ba3/IMG_2391.jpg">
-    <img src="/images/posts/ba3/IMG_4836.jpg">
-    <img src="/images/posts/ba3/IMG_4974.jpg">
-    <img src="/images/posts/ba3/IMG_5122.jpg">
-    <img src="/images/posts/ba3/IMG_5210.jpg">
-    <img src="/images/posts/ba3/IMG_7284.jpg">
-    <img src="/images/posts/ba3/P1010076.jpg">
-    <img src="/images/posts/ba3/P1010147.jpg">
-    <img src="/images/posts/ba3/IMG_2393.jpg">
-    <img src="/images/posts/ba3/IMG_4838.jpg">
-    <img src="/images/posts/ba3/IMG_4980.jpg">
-    <img src="/images/posts/ba3/IMG_5137.jpg">
-    <img src="/images/posts/ba3/IMG_6956.jpg">
-    <img src="/images/posts/ba3/IMG_7287.jpg">
-    <img src="/images/posts/ba3/P1010090.jpg">
-    <img src="/images/posts/ba3/P1010153.jpg">
-    <img src="/images/posts/ba3/IMG_2439.jpg">
-    <img src="/images/posts/ba3/IMG_4869.jpg">
-    <img src="/images/posts/ba3/IMG_4985.jpg">
-    <img src="/images/posts/ba3/IMG_5140.jpg">
-    <img src="/images/posts/ba3/IMG_6957.jpg">
-    <img src="/images/posts/ba3/IMG_7289.jpg">
-    <img src="/images/posts/ba3/P1010092.jpg">
-    <img src="/images/posts/ba3/P1010161.jpg">
-    <img src="/images/posts/ba3/IMG_2964.jpg">
-    <img src="/images/posts/ba3/IMG_4891.jpg">
-    <img src="/images/posts/ba3/IMG_5021.jpg">
-    <img src="/images/posts/ba3/IMG_5146.jpg">
-    <img src="/images/posts/ba3/IMG_7248.jpg">
-    <img src="/images/posts/ba3/P1010002.jpg">
-    <img src="/images/posts/ba3/P1010094.jpg">
-    <img src="/images/posts/ba3/IMG_4588.jpg">
-    <img src="/images/posts/ba3/IMG_4893.jpg">
-    <img src="/images/posts/ba3/IMG_5024.jpg">
-    <img src="/images/posts/ba3/IMG_5147.jpg">
-    <img src="/images/posts/ba3/IMG_7250.jpg">
-    <img src="/images/posts/ba3/P1010004.jpg">
-    <img src="/images/posts/ba3/P1010095.jpg">
-    <img src="/images/posts/ba3/IMG_4592.jpg">
-    <img src="/images/posts/ba3/IMG_4904.jpg">
-    <img src="/images/posts/ba3/IMG_5036.jpg">
-    <img src="/images/posts/ba3/IMG_5161.jpg">
-    <img src="/images/posts/ba3/IMG_7260.jpg">
-    <img src="/images/posts/ba3/P1010015.jpg">
-    <img src="/images/posts/ba3/P1010096.jpg">
-    <img src="/images/posts/ba3/IMG_4594.jpg">
-    <img src="/images/posts/ba3/IMG_4918.jpg">
-    <img src="/images/posts/ba3/IMG_5049.jpg">
-    <img src="/images/posts/ba3/IMG_5174.jpg">
-    <img src="/images/posts/ba3/IMG_7261.jpg">
-    <img src="/images/posts/ba3/P1010021.jpg">
-    <img src="/images/posts/ba3/P1010114.jpg">
-    <img src="/images/posts/ba3/IMG_4655.jpg">
-    <img src="/images/posts/ba3/IMG_4928.jpg">
-    <img src="/images/posts/ba3/IMG_5050.jpg">
-    <img src="/images/posts/ba3/IMG_5180.jpg">
-    <img src="/images/posts/ba3/IMG_7262.jpg">
-    <img src="/images/posts/ba3/P1010023.jpg">
-    <img src="/images/posts/ba3/P1010116.jpg">
-    <img src="/images/posts/ba3/IMG_4681.jpg">
-    <img src="/images/posts/ba3/IMG_4931.jpg">
-    <img src="/images/posts/ba3/IMG_5061.jpg">
-    <img src="/images/posts/ba3/IMG_5181.jpg">
-    <img src="/images/posts/ba3/IMG_7264.jpg">
-    <img src="/images/posts/ba3/P1010030.jpg">
-    <img src="/images/posts/ba3/P1010118.jpg">
-    <img src="/images/posts/ba3/IMG_4706.jpg">
-    <img src="/images/posts/ba3/IMG_4938.jpg">
-    <img src="/images/posts/ba3/IMG_5073.jpg">
-    <img src="/images/posts/ba3/IMG_5183.jpg">
-    <img src="/images/posts/ba3/IMG_7267.jpg">
-    <img src="/images/posts/ba3/P1010052.jpg">
-    <img src="/images/posts/ba3/P1010130.jpg">
-    <img src="/images/posts/ba3/IMG_4734.jpg">
-    <img src="/images/posts/ba3/IMG_4940.jpg">
-    <img src="/images/posts/ba3/IMG_5086.jpg">
-    <img src="/images/posts/ba3/IMG_5196.jpg">
-    <img src="/images/posts/ba3/IMG_7268.jpg">
-    <img src="/images/posts/ba3/P1010054.jpg">
-    <img src="/images/posts/ba3/P1010132.jpg">
+<div class="gallery-box">
+    <div class="gallery">
+        <img src="/images/posts/ba3/GOPR0234.jpg">
+        <img src="/images/posts/ba3/IMG_4778.jpg">
+        <img src="/images/posts/ba3/IMG_4954.jpg">
+        <img src="/images/posts/ba3/IMG_5089.jpg">
+        <img src="/images/posts/ba3/IMG_5197.jpg">
+        <img src="/images/posts/ba3/IMG_7272.jpg">
+        <img src="/images/posts/ba3/P1010063.jpg">
+        <img src="/images/posts/ba3/P1010135.jpg">
+        <img src="/images/posts/ba3/IMG_2381.jpg">
+        <img src="/images/posts/ba3/IMG_4806.jpg">
+        <img src="/images/posts/ba3/IMG_4958.jpg">
+        <img src="/images/posts/ba3/IMG_5108.jpg">
+        <img src="/images/posts/ba3/IMG_5206.jpg">
+        <img src="/images/posts/ba3/IMG_7276.jpg">
+        <img src="/images/posts/ba3/P1010070.jpg">
+        <img src="/images/posts/ba3/P1010137.jpg">
+        <img src="/images/posts/ba3/IMG_2391.jpg">
+        <img src="/images/posts/ba3/IMG_4836.jpg">
+        <img src="/images/posts/ba3/IMG_4974.jpg">
+        <img src="/images/posts/ba3/IMG_5122.jpg">
+        <img src="/images/posts/ba3/IMG_5210.jpg">
+        <img src="/images/posts/ba3/IMG_7284.jpg">
+        <img src="/images/posts/ba3/P1010076.jpg">
+        <img src="/images/posts/ba3/P1010147.jpg">
+        <img src="/images/posts/ba3/IMG_2393.jpg">
+        <img src="/images/posts/ba3/IMG_4838.jpg">
+        <img src="/images/posts/ba3/IMG_4980.jpg">
+        <img src="/images/posts/ba3/IMG_5137.jpg">
+        <img src="/images/posts/ba3/IMG_6956.jpg">
+        <img src="/images/posts/ba3/IMG_7287.jpg">
+        <img src="/images/posts/ba3/P1010090.jpg">
+        <img src="/images/posts/ba3/P1010153.jpg">
+        <img src="/images/posts/ba3/IMG_2439.jpg">
+        <img src="/images/posts/ba3/IMG_4869.jpg">
+        <img src="/images/posts/ba3/IMG_4985.jpg">
+        <img src="/images/posts/ba3/IMG_5140.jpg">
+        <img src="/images/posts/ba3/IMG_6957.jpg">
+        <img src="/images/posts/ba3/IMG_7289.jpg">
+        <img src="/images/posts/ba3/P1010092.jpg">
+        <img src="/images/posts/ba3/P1010161.jpg">
+        <img src="/images/posts/ba3/IMG_2964.jpg">
+        <img src="/images/posts/ba3/IMG_4891.jpg">
+        <img src="/images/posts/ba3/IMG_5021.jpg">
+        <img src="/images/posts/ba3/IMG_5146.jpg">
+        <img src="/images/posts/ba3/IMG_7248.jpg">
+        <img src="/images/posts/ba3/P1010002.jpg">
+        <img src="/images/posts/ba3/P1010094.jpg">
+        <img src="/images/posts/ba3/IMG_4588.jpg">
+        <img src="/images/posts/ba3/IMG_4893.jpg">
+        <img src="/images/posts/ba3/IMG_5024.jpg">
+        <img src="/images/posts/ba3/IMG_5147.jpg">
+        <img src="/images/posts/ba3/IMG_7250.jpg">
+        <img src="/images/posts/ba3/P1010004.jpg">
+        <img src="/images/posts/ba3/P1010095.jpg">
+        <img src="/images/posts/ba3/IMG_4592.jpg">
+        <img src="/images/posts/ba3/IMG_4904.jpg">
+        <img src="/images/posts/ba3/IMG_5036.jpg">
+        <img src="/images/posts/ba3/IMG_5161.jpg">
+        <img src="/images/posts/ba3/IMG_7260.jpg">
+        <img src="/images/posts/ba3/P1010015.jpg">
+        <img src="/images/posts/ba3/P1010096.jpg">
+        <img src="/images/posts/ba3/IMG_4594.jpg">
+        <img src="/images/posts/ba3/IMG_4918.jpg">
+        <img src="/images/posts/ba3/IMG_5049.jpg">
+        <img src="/images/posts/ba3/IMG_5174.jpg">
+        <img src="/images/posts/ba3/IMG_7261.jpg">
+        <img src="/images/posts/ba3/P1010021.jpg">
+        <img src="/images/posts/ba3/P1010114.jpg">
+        <img src="/images/posts/ba3/IMG_4655.jpg">
+        <img src="/images/posts/ba3/IMG_4928.jpg">
+        <img src="/images/posts/ba3/IMG_5050.jpg">
+        <img src="/images/posts/ba3/IMG_5180.jpg">
+        <img src="/images/posts/ba3/IMG_7262.jpg">
+        <img src="/images/posts/ba3/P1010023.jpg">
+        <img src="/images/posts/ba3/P1010116.jpg">
+        <img src="/images/posts/ba3/IMG_4681.jpg">
+        <img src="/images/posts/ba3/IMG_4931.jpg">
+        <img src="/images/posts/ba3/IMG_5061.jpg">
+        <img src="/images/posts/ba3/IMG_5181.jpg">
+        <img src="/images/posts/ba3/IMG_7264.jpg">
+        <img src="/images/posts/ba3/P1010030.jpg">
+        <img src="/images/posts/ba3/P1010118.jpg">
+        <img src="/images/posts/ba3/IMG_4706.jpg">
+        <img src="/images/posts/ba3/IMG_4938.jpg">
+        <img src="/images/posts/ba3/IMG_5073.jpg">
+        <img src="/images/posts/ba3/IMG_5183.jpg">
+        <img src="/images/posts/ba3/IMG_7267.jpg">
+        <img src="/images/posts/ba3/P1010052.jpg">
+        <img src="/images/posts/ba3/P1010130.jpg">
+        <img src="/images/posts/ba3/IMG_4734.jpg">
+        <img src="/images/posts/ba3/IMG_4940.jpg">
+        <img src="/images/posts/ba3/IMG_5086.jpg">
+        <img src="/images/posts/ba3/IMG_5196.jpg">
+        <img src="/images/posts/ba3/IMG_7268.jpg">
+        <img src="/images/posts/ba3/P1010054.jpg">
+        <img src="/images/posts/ba3/P1010132.jpg">
+    </div>
 </div>
 
-I know this was a long post. I hope you enjoyed it. Thanks for reading to the end!  
+I know this was a long post. I hope you enjoyed it. Thanks for reading to the end!
 Matt >(((º>

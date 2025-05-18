@@ -1,15 +1,30 @@
+<!-- begin footer-widgets -->
+<section class="footer-widgets">
+    <div class="container">
+        <div class="row">
+            {% include footer-widgets/widget-recent-posts.html %} {% include
+            footer-widgets/widget-tag-cloud.html %} {% include
+            footer-widgets/widget-subscribe.html %}
+        </div>
+    </div>
+</section>
+<!-- end footer-widgets -->
+
+<!-- begin footer -->
 <footer class="footer">
-
-	<div class="wrap">
-
-		<p class="footer__text">{{ site.data.settings.footer_settings.footer_tagline }}</p>
-
-		<div class="footer__copyright">
-			<span>© {{ 'now' | date: "%Y" }} {{ site.data.settings.basic_settings.site_title }}</span>
-		</div>
-
-		{% include socials.html %}
-
-	</div>
-
+    <div class="container">
+        <div class="row">
+            <div class="col col-12">
+                <div class="footer__inner">
+                    <div class="copyright">
+                        Copyright &copy;
+                        <a href="/">{{ site.data.settings.title }}</a> {{
+                        site.time | date: '%Y' }}. Made with ❤️ using Jekyll.
+                    </div>
+                    {% include social-links.html %}
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
+<!-- end footer -->

@@ -1,9 +1,10 @@
 ---
-title: "My Dream of a Tropical Life"
-subtitle: "You better Belize it!"
-date: 2015-07-23
-description: "I am planning on making my next long vacation a trip to Belize. I plan on seeing everything from the barrier reef to the jungle mountains."
-featured_image: "/images/posts/belize_hero.jpg"
+layout: post
+title:  My Dream of a Tropical Life
+description: I am planning on making my next long vacation a trip to Belize. I plan on seeing everything from the barrier reef to the jungle mountains.
+date:   2015-07-23
+image:  '/images/posts/belize_hero.jpg'
+tags:   [Lifestyle, Rest, Nature]
 ---
 
 ## Oh to live that tropical life

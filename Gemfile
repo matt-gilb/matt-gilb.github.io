@@ -1,10 +1,5 @@
 source 'https://rubygems.org'
-
-gem 'jekyll'
-
-gem 'webrick'
-
-group :jekyll_plugins do
-  gem 'jekyll-paginate'
-  gem 'jekyll-sitemap'
-end
+gem "bundler"
+gem "jekyll"
+gem "jekyll-paginate"
+gem "jekyll-sitemap"
