@@ -1,0 +1,42 @@
+---
+// src/components/Pagination.astro
+interface Props {
+  currentPage: number;
+  totalPages: number;
+  baseUrl: string; // e.g. "/blog"
+}
+const { currentPage, totalPages, baseUrl } = Astro.props;
+
+const prev = currentPage > 1
+  ? (currentPage === 2 ? `${baseUrl}/` : `${baseUrl}/page/${currentPage - 1}/`)
+  : null;
+const next = currentPage < totalPages ? `${baseUrl}/page/${currentPage + 1}/` : null;
+---
+
+{(prev || next) && (
+  <nav class="pagination" aria-label="Pagination">
+    {prev
+      ? <a href={prev} class="page-link">← Newer posts</a>
+      : <span class="page-link page-link--disabled">← Newer posts</span>
+    }
+    <span class="page-count">Page {currentPage} of {totalPages}</span>
+    {next
+      ? <a href={next} class="page-link">Older posts →</a>
+      : <span class="page-link page-link--disabled">Older posts →</span>
+    }
+  </nav>
+)}
+
+<style>
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+    font-size: 0.9375rem;
+  }
+  .page-link { color: var(--color-accent); text-decoration: none; }
+  .page-link:hover { text-decoration: underline; }
+  .page-link--disabled { color: var(--color-text); opacity: 0.4; }
+  .page-count { font-size: 0.875rem; opacity: 0.6; }
+</style>
