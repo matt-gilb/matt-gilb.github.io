@@ -118,6 +118,15 @@ a:hover { opacity: 0.8; }
   margin-block: 2em;
 }
 
+/* ── Responsive video embeds ─────────────────────────────── */
+.prose iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border-radius: 8px;
+  margin-block: 1.5em;
+}
+
 /* ── Gallery (used in trip report posts) ─────────────────── */
 .gallery-box { margin-block: 2em; }
 .gallery {
