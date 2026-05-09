@@ -1402,7 +1402,7 @@ git commit -m "feat: add paginated blog list at /blog/"
 ---
 // src/pages/blog/[slug].astro
 import Post from '../../layouts/Post.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
   const posts = (await getCollection('posts', ({ data }) => !data.draft))
@@ -1423,7 +1423,7 @@ export async function getStaticPaths() {
 }
 
 const { post, prev, next } = Astro.props;
-const { Content } = await post.render();
+const { Content } = await render(post);
 ---
 
 <Post
@@ -1504,7 +1504,7 @@ const projects = (await getCollection('projects', ({ data }) => !data.draft))
 ---
 // src/pages/portfolio/[slug].astro
 import Post from '../../layouts/Post.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
   const projects = (await getCollection('projects', ({ data }) => !data.draft))
@@ -1525,7 +1525,7 @@ export async function getStaticPaths() {
 }
 
 const { project, prev, next } = Astro.props;
-const { Content } = await project.render();
+const { Content } = await render(project);
 ---
 
 <Post
