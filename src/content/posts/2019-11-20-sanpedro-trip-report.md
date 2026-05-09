@@ -14,13 +14,13 @@ Before I left for Belize, I completed my course work for the PADI Open Water cer
 
 The checkout dives consisted of 3 checkout dives where I had to show ability in basic skills underwater, and a final "fun" dive where I was able to dive as a newly-certified individual with other divers and our guide.
 
-You can read more about my trip overall in [this blog article]({% post_url 2019-11-03-belize-trip %}) I wrote about the trip. This is my report on the dive experience.
+You can read more about my trip overall in [this blog article](/blog/2019-11-03-belize-trip/) I wrote about the trip. This is my report on the dive experience.
 
 ## Location and conditions
 
 I went on 4 dives on the "local" reef off the shore of Ambergris Caye. Visibility was excelent at 80+ feet and the surface was calm to small waves. Water temps were in the mid 80º's F and I only needed a rashguard for warmth/protection.
 
-![San Pedro Dive Sites Map]({% link images/posts/san_pedro_01/sp_dive_sites.jpg %})
+![San Pedro Dive Sites Map](/images/posts/san_pedro_01/sp_dive_sites.jpg)
 
 Diving consisted of a one-tank dive in the morning, followed by a return to shore for lunch and the surface interval. That was followed by a second one-tank dive in the afternoon. Exiting the boat was done via back-roll off the side, and entry was with a detachable ladder hung off the side of the boat. You attached your BCD and regulator to the tank and did an equipment check on the dock before getting on the boat. The assembled tank/BCD/regulator were then stored in a rack in the rear of the boat for the short (just a few minutes) trip out to the reef.
 
@@ -28,7 +28,7 @@ Diving consisted of a one-tank dive in the morning, followed by a return to shor
 
 As mentioned above, I dove with Belize Diving Adventures. The dive shop is located on a dock right in the heart of San Pedro. My instructor and dive guide was Enes Ramirez.
 
-![Shop photo with logo]({% link images/posts/san_pedro_01/bda_shop.jpg %})
+![Shop photo with logo](/images/posts/san_pedro_01/bda_shop.jpg)
 
 ## Dive video
 

@@ -12,7 +12,7 @@ In November of 2019 I finally made it to Belize, a counrty I've wanted to visit 
 
 ![Belize Travel Map](/images/posts/belize1/belize_travel_map.jpg)
 
-**You can read all about my experience becoming a certified scuba diver in my [trip report]({% post_url 2019-11-20-sanpedro-trip-report %}).**
+**You can read all about my experience becoming a certified scuba diver in my [trip report](/blog/2019-11-20-sanpedro-trip-report/).**
 
 ## Where I went
 
