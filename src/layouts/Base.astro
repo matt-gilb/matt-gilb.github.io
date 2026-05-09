@@ -1,0 +1,64 @@
+---
+// src/layouts/Base.astro
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+import '../styles/syntax.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title,
+  description = 'These are my thoughts, images, ideas, project journals, and dive trip reports.',
+  image = '/images/social.jpg',
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Anti-FOUC: set theme before CSS loads -->
+    <script is:inline>
+      (function () {
+        var stored = localStorage.getItem('theme');
+        var preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', stored || preferred || 'dark');
+      })();
+    </script>
+
+    <title>{title} — Matt Gilbert</title>
+    <meta name="description" content={description} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={`${title} — Matt Gilbert`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="Matt Gilbert" href="/feed.xml" />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
