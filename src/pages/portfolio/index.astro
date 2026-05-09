@@ -1,0 +1,31 @@
+---
+// src/pages/portfolio/index.astro
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const projects = (await getCollection('projects', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Base title="Portfolio" description="Build journals, side projects, and hardware experiments.">
+  <div class="container">
+    <h1 class="page-heading">Portfolio</h1>
+    <p class="page-desc">Build journals and side projects.</p>
+    {projects.map(project => (
+      <PostCard
+        title={project.data.title}
+        description={project.data.description}
+        date={project.data.date}
+        image={project.data.image}
+        tags={project.data.tags}
+        href={`/portfolio/${project.slug}/`}
+      />
+    ))}
+  </div>
+</Base>
+
+<style>
+  .page-heading { padding-block: 2.5rem 0.25rem; }
+  .page-desc { opacity: 0.7; margin-bottom: 0.5rem; }
+</style>

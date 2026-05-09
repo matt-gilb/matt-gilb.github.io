@@ -1,0 +1,38 @@
+---
+// src/pages/portfolio/[slug].astro
+import Post from '../../layouts/Post.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const projects = (await getCollection('projects', ({ data }) => !data.draft))
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+  return projects.map((project, index) => ({
+    params: { slug: project.slug },
+    props: {
+      project,
+      prev: index < projects.length - 1
+        ? { title: projects[index + 1].data.title, href: `/portfolio/${projects[index + 1].slug}/` }
+        : null,
+      next: index > 0
+        ? { title: projects[index - 1].data.title, href: `/portfolio/${projects[index - 1].slug}/` }
+        : null,
+    },
+  }));
+}
+
+const { project, prev, next } = Astro.props;
+const { Content } = await render(project);
+---
+
+<Post
+  title={project.data.title}
+  description={project.data.description}
+  date={project.data.date}
+  image={project.data.image}
+  tags={project.data.tags}
+  prev={prev}
+  next={next}
+>
+  <Content />
+</Post>
