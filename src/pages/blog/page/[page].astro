@@ -5,8 +5,6 @@ import PostCard from '../../../components/PostCard.astro';
 import Pagination from '../../../components/Pagination.astro';
 import { getCollection } from 'astro:content';
 
-const PAGE_SIZE = 8;
-
 export async function getStaticPaths() {
   const PAGE_SIZE = 8;
   const allPosts = (await getCollection('posts', ({ data }) => !data.draft))

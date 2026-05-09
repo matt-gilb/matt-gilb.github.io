@@ -9,13 +9,13 @@ export async function getStaticPaths() {
   const projects = await getCollection('projects', ({ data }) => !data.draft);
 
   type Entry = { title: string; description: string; date: Date; image: string; tags: string[]; href: string };
-  const tagMap: Record<string, Entry[]> = {};
+  const tagMap: Record<string, { label: string; entries: Entry[] }> = {};
 
   const addEntry = (entry: (typeof posts)[0] | (typeof projects)[0], hrefBase: string) => {
     entry.data.tags.forEach(tag => {
       const key = tag.toLowerCase().replace(/\s+/g, '-');
-      if (!tagMap[key]) tagMap[key] = [];
-      tagMap[key].push({
+      if (!tagMap[key]) tagMap[key] = { label: tag, entries: [] };
+      tagMap[key].entries.push({
         title: entry.data.title,
         description: entry.data.description,
         date: entry.data.date,
@@ -29,21 +29,22 @@ export async function getStaticPaths() {
   posts.forEach(p => addEntry(p, '/blog/'));
   projects.forEach(p => addEntry(p, '/portfolio/'));
 
-  return Object.entries(tagMap).map(([tag, entries]) => ({
+  return Object.entries(tagMap).map(([tag, { label, entries }]) => ({
     params: { tag },
     props: {
       tag,
+      label,
       entries: entries.sort((a, b) => b.date.valueOf() - a.date.valueOf()),
     },
   }));
 }
 
-const { tag, entries } = Astro.props;
+const { tag, label, entries } = Astro.props;
 ---
 
-<Base title={`Tag: ${tag}`}>
+<Base title={`Tag: ${label}`}>
   <div class="container">
-    <h1 class="page-heading">#{tag}</h1>
+    <h1 class="page-heading">#{label}</h1>
     <p class="entry-count">{entries.length} {entries.length === 1 ? 'entry' : 'entries'}</p>
     {entries.map(entry => (
       <PostCard

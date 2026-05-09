@@ -4,25 +4,27 @@ import Base from '../layouts/Base.astro';
 ---
 
 <Base title="Search">
+  <Fragment slot="head">
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  </Fragment>
+
   <div class="container search-page">
     <h1>Search</h1>
     <div id="search"></div>
   </div>
-</Base>
 
-<!-- Pagefind UI: only available after `astro build && pagefind` -->
-<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
-<script src="/pagefind/pagefind-ui.js" is:inline></script>
-<script is:inline>
-  window.addEventListener('DOMContentLoaded', () => {
-    if (typeof window.PagefindUI !== 'undefined') {
-      new window.PagefindUI({ element: '#search', showSubResults: true });
-    } else {
-      document.getElementById('search').innerHTML =
-        '<p style="opacity:0.6">Search index not available in dev mode. Run <code>astro build</code> first.</p>';
-    }
-  });
-</script>
+  <script src="/pagefind/pagefind-ui.js" is:inline></script>
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (typeof window.PagefindUI !== 'undefined') {
+        new window.PagefindUI({ element: '#search', showSubResults: true });
+      } else {
+        document.getElementById('search').innerHTML =
+          '<p style="opacity:0.6">Search index not available in dev mode. Run <code>astro build</code> first.</p>';
+      }
+    });
+  </script>
+</Base>
 
 <style>
   .search-page { padding-block: 3rem; }

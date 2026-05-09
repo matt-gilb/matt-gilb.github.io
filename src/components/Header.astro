@@ -15,7 +15,7 @@ const current = Astro.url.pathname;
 <header class="site-header">
   <div class="container container--wide header-inner">
     <a href="/" class="site-logo">Matt Gilbert</a>
-    <nav aria-label="Main navigation">
+    <nav aria-label="Main navigation" id="main-nav">
       <ul>
         {nav.map(({ label, href }) => (
           <li>
@@ -35,8 +35,22 @@ const current = Astro.url.pathname;
       </ul>
     </nav>
     <ThemeToggle />
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
   </div>
 </header>
+
+<script is:inline>
+  const btn = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('main-nav');
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    nav.classList.toggle('nav-open', !open);
+  });
+</script>
 
 <style>
   .site-header {
@@ -80,7 +94,40 @@ const current = Astro.url.pathname;
     color: var(--color-accent);
     background-color: var(--color-bg-subtle);
   }
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text);
+    padding: 0.25rem;
+    line-height: 0;
+  }
+  .icon-close { display: none; }
+
   @media (max-width: 36em) {
-    nav { display: none; }
+    .menu-toggle { display: flex; }
+
+    #main-nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--color-bg);
+      border-bottom: 1px solid var(--color-border);
+      padding: 0.75rem 1rem;
+    }
+    #main-nav.nav-open { display: block; }
+    #main-nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+    }
+    #main-nav ul li { width: 100%; }
+    #main-nav ul a { width: 100%; padding: 0.6rem 0.5rem; }
+
+    .menu-toggle[aria-expanded="true"] .icon-menu { display: none; }
+    .menu-toggle[aria-expanded="true"] .icon-close { display: block; }
   }
 </style>

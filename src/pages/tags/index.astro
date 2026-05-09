@@ -6,25 +6,26 @@ import { getCollection } from 'astro:content';
 const posts = await getCollection('posts', ({ data }) => !data.draft);
 const projects = await getCollection('projects', ({ data }) => !data.draft);
 
-const tagCounts: Record<string, number> = {};
+const tagMap: Record<string, { label: string; count: number }> = {};
 [...posts, ...projects].forEach(entry => {
   entry.data.tags.forEach(tag => {
     const key = tag.toLowerCase().replace(/\s+/g, '-');
-    tagCounts[key] = (tagCounts[key] ?? 0) + 1;
+    if (!tagMap[key]) tagMap[key] = { label: tag, count: 0 };
+    tagMap[key].count++;
   });
 });
 
-const tags = Object.entries(tagCounts).sort((a, b) => b[1] - a[1]);
+const tags = Object.entries(tagMap).sort((a, b) => b[1].count - a[1].count);
 ---
 
 <Base title="Tags">
   <div class="container">
     <h1 class="page-heading">Tags</h1>
     <ul class="tag-cloud" role="list">
-      {tags.map(([tag, count]) => (
+      {tags.map(([slug, { label, count }]) => (
         <li>
-          <a href={`/tags/${tag}/`} class="tag-item">
-            {tag} <span class="tag-count">{count}</span>
+          <a href={`/tags/${slug}/`} class="tag-item">
+            {label} <span class="tag-count">{count}</span>
           </a>
         </li>
       ))}

@@ -9,12 +9,14 @@ interface Props {
   title: string;
   description?: string;
   image?: string;
+  type?: 'website' | 'article';
 }
 
 const {
   title,
   description = 'These are my thoughts, images, ideas, project journals, and dive trip reports.',
   image = '/images/social.jpg',
+  type = 'website',
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -40,7 +42,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="description" content={description} />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={`${title} — Matt Gilbert`} />
     <meta property="og:description" content={description} />
@@ -53,6 +55,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="Matt Gilbert" href="/feed.xml" />
+
+    <slot name="head" />
   </head>
   <body>
     <Header />
