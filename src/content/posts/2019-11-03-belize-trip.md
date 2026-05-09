@@ -10,7 +10,7 @@ tags:   [Travel, Scuba]
 
 In November of 2019 I finally made it to Belize, a counrty I've wanted to visit for several years. I decided to make the most of my time in the country, and see as much as I could. I broke the trip up into two parts: the first week would be scuba certification and some fun dives, and the second week would be exploring the country by motorcycle.
 
-![Belize Travel Map]({{site.baseurl}}/images/posts/belize1/belize_travel_map.jpg)
+![Belize Travel Map](/images/posts/belize1/belize_travel_map.jpg)
 
 **You can read all about my experience becoming a certified scuba diver in my [trip report]({% post_url 2019-11-20-sanpedro-trip-report %}).**
 
