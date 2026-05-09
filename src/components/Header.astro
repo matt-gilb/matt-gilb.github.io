@@ -14,7 +14,10 @@ const current = Astro.url.pathname;
 
 <header class="site-header">
   <div class="container container--wide header-inner">
-    <a href="/" class="site-logo">Matt Gilbert</a>
+    <a href="/" class="site-logo">
+      <img src="/images/logo.png" alt="" height="36" loading="eager" />
+      Matt Gilbert
+    </a>
     <nav aria-label="Main navigation" id="main-nav">
       <ul>
         {nav.map(({ label, href }) => (
@@ -67,12 +70,20 @@ const current = Astro.url.pathname;
     gap: 1.5rem;
   }
   .site-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-family: Georgia, serif;
     font-size: 1.125rem;
     font-weight: 700;
     color: var(--color-text-strong);
     text-decoration: none;
     margin-right: auto;
+  }
+  .site-logo img {
+    height: 36px;
+    width: auto;
+    display: block;
   }
   nav ul {
     display: flex;

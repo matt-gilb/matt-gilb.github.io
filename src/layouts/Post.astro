@@ -59,6 +59,27 @@ const formattedDate = date.toLocaleDateString('en-US', {
   </article>
 </Base>
 
+<script>
+  const overlay = document.createElement('div');
+  overlay.className = 'lightbox';
+  const bigImg = document.createElement('img');
+  overlay.appendChild(bigImg);
+  document.body.appendChild(overlay);
+
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      bigImg.src = (img as HTMLImageElement).src;
+      bigImg.alt = img.alt;
+      overlay.classList.add('is-open');
+    });
+  });
+
+  overlay.addEventListener('click', () => overlay.classList.remove('is-open'));
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') overlay.classList.remove('is-open');
+  });
+</script>
+
 <style>
   .post-header { padding-block: 2.5rem 1.5rem; }
   .post-meta { font-size: 0.875rem; opacity: 0.65; margin-bottom: 0.75rem; }
