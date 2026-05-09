@@ -1,0 +1,64 @@
+---
+// src/pages/tags/[tag].astro
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  const projects = await getCollection('projects', ({ data }) => !data.draft);
+
+  type Entry = { title: string; description: string; date: Date; image: string; tags: string[]; href: string };
+  const tagMap: Record<string, Entry[]> = {};
+
+  const addEntry = (entry: (typeof posts)[0] | (typeof projects)[0], hrefBase: string) => {
+    entry.data.tags.forEach(tag => {
+      const key = tag.toLowerCase().replace(/\s+/g, '-');
+      if (!tagMap[key]) tagMap[key] = [];
+      tagMap[key].push({
+        title: entry.data.title,
+        description: entry.data.description,
+        date: entry.data.date,
+        image: entry.data.image,
+        tags: entry.data.tags,
+        href: `${hrefBase}${entry.slug}/`,
+      });
+    });
+  };
+
+  posts.forEach(p => addEntry(p, '/blog/'));
+  projects.forEach(p => addEntry(p, '/portfolio/'));
+
+  return Object.entries(tagMap).map(([tag, entries]) => ({
+    params: { tag },
+    props: {
+      tag,
+      entries: entries.sort((a, b) => b.date.valueOf() - a.date.valueOf()),
+    },
+  }));
+}
+
+const { tag, entries } = Astro.props;
+---
+
+<Base title={`Tag: ${tag}`}>
+  <div class="container">
+    <h1 class="page-heading">#{tag}</h1>
+    <p class="entry-count">{entries.length} {entries.length === 1 ? 'entry' : 'entries'}</p>
+    {entries.map(entry => (
+      <PostCard
+        title={entry.title}
+        description={entry.description}
+        date={entry.date}
+        image={entry.image}
+        tags={entry.tags}
+        href={entry.href}
+      />
+    ))}
+  </div>
+</Base>
+
+<style>
+  .page-heading { padding-block: 2.5rem 0.25rem; }
+  .entry-count { opacity: 0.6; font-size: 0.9rem; margin-bottom: 0.5rem; }
+</style>

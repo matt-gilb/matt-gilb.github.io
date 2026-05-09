@@ -1,0 +1,58 @@
+---
+// src/pages/tags/index.astro
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts', ({ data }) => !data.draft);
+const projects = await getCollection('projects', ({ data }) => !data.draft);
+
+const tagCounts: Record<string, number> = {};
+[...posts, ...projects].forEach(entry => {
+  entry.data.tags.forEach(tag => {
+    const key = tag.toLowerCase().replace(/\s+/g, '-');
+    tagCounts[key] = (tagCounts[key] ?? 0) + 1;
+  });
+});
+
+const tags = Object.entries(tagCounts).sort((a, b) => b[1] - a[1]);
+---
+
+<Base title="Tags">
+  <div class="container">
+    <h1 class="page-heading">Tags</h1>
+    <ul class="tag-cloud" role="list">
+      {tags.map(([tag, count]) => (
+        <li>
+          <a href={`/tags/${tag}/`} class="tag-item">
+            {tag} <span class="tag-count">{count}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>
+
+<style>
+  .page-heading { padding-block: 2.5rem 1.5rem; }
+  .tag-cloud { display: flex; flex-wrap: wrap; gap: 0.75rem; list-style: none; }
+  .tag-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--color-bg-subtle);
+    border: 1px solid var(--color-border);
+    padding: 0.35em 0.75em;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 0.9rem;
+  }
+  .tag-item:hover { border-color: var(--color-accent); color: var(--color-accent); }
+  .tag-count {
+    background: var(--color-border);
+    border-radius: 99px;
+    padding: 0.1em 0.5em;
+    font-size: 0.75rem;
+    color: var(--color-text-strong);
+  }
+</style>
