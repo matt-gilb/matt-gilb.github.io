@@ -1,17 +1,87 @@
 ---
+// src/pages/index.astro
+import Base from '../layouts/Base.astro';
+import PostCard from '../components/PostCard.astro';
+import { getCollection } from 'astro:content';
 
+const posts = (await getCollection('posts', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 6);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base title="Home" description="These are my thoughts, images, ideas, project journals, and dive trip reports.">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <img src="/images/mattg.png" alt="Matt Gilbert" class="avatar" width="80" height="80" />
+      <div>
+        <h1>Hi! I'm Matt Gilbert</h1>
+        <p class="hero-desc">These are my thoughts, images, ideas, project journals, and dive trip reports.</p>
+        <a href="/blog/" class="cta">Read the blog →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent posts -->
+  <section class="container">
+    <h2 class="section-heading">Recent Posts</h2>
+    {posts.map(post => (
+      <PostCard
+        title={post.data.title}
+        description={post.data.description}
+        date={post.data.date}
+        image={post.data.image}
+        tags={post.data.tags}
+        href={`/blog/${post.slug}/`}
+      />
+    ))}
+    <a href="/blog/" class="all-posts-link">All posts →</a>
+  </section>
+
+</Base>
+
+<style>
+  .hero {
+    border-bottom: 1px solid var(--color-border);
+    padding-block: 3.5rem;
+    margin-bottom: 3rem;
+  }
+  .hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+  }
+  .avatar {
+    border-radius: 50%;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  .hero h1 { margin-bottom: 0.5rem; }
+  .hero-desc { font-size: 1.0625rem; margin-bottom: 1rem; opacity: 0.85; }
+  .cta {
+    display: inline-block;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    text-decoration: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9375rem;
+  }
+  .cta:hover { opacity: 0.85; }
+  .section-heading { margin-bottom: 0.5rem; }
+  .all-posts-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 0.9375rem;
+  }
+  .all-posts-link:hover { text-decoration: underline; }
+  @media (max-width: 36em) {
+    .hero-inner { flex-direction: column; text-align: center; }
+  }
+</style>
