@@ -4,13 +4,16 @@ Context for working on this project. Covers non-obvious decisions, gotchas, and 
 
 ---
 
-## Critical: Astro version
+## Astro version
 
-This project is pinned to **Astro 5** (`astro@^5.18.1`). Do not upgrade to Astro 6 — the Content Collections API changed in ways that would break the site.
+This project runs on **Astro 6** (`astro@^6.3.2`). Content collections use the **Content Layer API** via the `glob()` loader from `astro/loaders`, defined in `src/content.config.ts` (note: not `src/content/config.ts` — Astro 6 expects the file at the new location).
 
-Astro 5-specific APIs in use:
-- `import { render } from 'astro:content'` → `const { Content } = await render(entry)` (NOT `entry.render()`)
-- `entry.slug` works because both collections use `type: 'content'` (legacy mode) in `src/content/config.ts`
+Astro 6-specific APIs in use:
+- `loader: glob({ pattern: '**/*.md', base: './src/content/<collection>' })` defines each collection.
+- `import { render } from 'astro:content'` → `const { Content } = await render(entry)` (NOT `entry.render()`).
+- `entry.id` is the URL slug (filename without `.md`). The legacy `entry.slug` property no longer exists.
+
+Node ≥ 22.12.0 is required. The project pins `24.15.0` in `.node-version`.
 
 ---
 
@@ -34,7 +37,7 @@ Push to `main` → GitHub Actions builds, runs Pagefind, deploys to GitHub Pages
 
 ## Content collections
 
-Two collections defined in `src/content/config.ts`:
+Two collections defined in `src/content.config.ts` (both use `loader: glob(...)` from `astro/loaders`):
 
 - **`posts`** — 24 blog posts in `src/content/posts/`; URL pattern `/blog/[slug]/`
 - **`projects`** — 6 build journal posts in `src/content/projects/`; URL pattern `/portfolio/[slug]/`
