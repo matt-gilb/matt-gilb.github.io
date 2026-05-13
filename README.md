@@ -1,10 +1,10 @@
 # mattgilbert.co
 
-Source for my personal blog at [mattgilbert.co](https://mattgilbert.co). Built with Astro 5, deployed to GitHub Pages via GitHub Actions.
+Source for my personal blog at [mattgilbert.co](https://mattgilbert.co). Built with Astro 6, deployed to GitHub Pages via GitHub Actions.
 
 ## Stack
 
-- **Astro 5** — static site generator with Content Collections
+- **Astro 6** — static site generator using the Content Layer API
 - **Pagefind** — post-build static search index
 - **Shiki** — dual-theme syntax highlighting (Atom One Dark / GitHub Light)
 - **Mailchimp** — newsletter signup in footer
@@ -13,13 +13,7 @@ Source for my personal blog at [mattgilbert.co](https://mattgilbert.co). Built w
 
 ## Local development
 
-Node is managed with [fnm](https://github.com/Schniz/fnm). Activate it before running any commands:
-
-```sh
-eval "$(/opt/homebrew/bin/fnm env --shell bash)"
-```
-
-Then install dependencies and start the dev server:
+Requires **Node ≥ 22.12.0** (Astro 6's minimum). The exact version used locally and in CI is pinned in `.node-version` (`24.15.0`). If you use [fnm](https://github.com/Schniz/fnm) or [nvm](https://github.com/nvm-sh/nvm) with their auto-switch hooks enabled, the right version will be selected on `cd`.
 
 ```sh
 npm install
