@@ -16,13 +16,7 @@ Astro 5-specific APIs in use:
 
 ## Local development
 
-Node is managed with **fnm**. Before running any npm command in a new terminal, activate it:
-
-```sh
-eval "$(/opt/homebrew/bin/fnm env --shell bash)"
-```
-
-Then: `npm install` / `npm run dev` as normal.
+Node is managed with **fnm** (shell integration is active, no manual activation needed). Just run `npm install` / `npm run dev` as normal.
 
 ---
 

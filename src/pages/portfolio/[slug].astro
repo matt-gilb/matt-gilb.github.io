@@ -8,14 +8,14 @@ export async function getStaticPaths() {
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
   return projects.map((project, index) => ({
-    params: { slug: project.slug },
+    params: { slug: project.id },
     props: {
       project,
       prev: index < projects.length - 1
-        ? { title: projects[index + 1].data.title, href: `/portfolio/${projects[index + 1].slug}/` }
+        ? { title: projects[index + 1].data.title, href: `/portfolio/${projects[index + 1].id}/` }
         : null,
       next: index > 0
-        ? { title: projects[index - 1].data.title, href: `/portfolio/${projects[index - 1].slug}/` }
+        ? { title: projects[index - 1].data.title, href: `/portfolio/${projects[index - 1].id}/` }
         : null,
     },
   }));
