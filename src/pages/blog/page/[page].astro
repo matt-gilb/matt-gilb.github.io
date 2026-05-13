@@ -38,7 +38,7 @@ const { posts, currentPage, totalPages } = Astro.props;
         date={post.data.date}
         image={post.data.image}
         tags={post.data.tags}
-        href={`/blog/${post.slug}/`}
+        href={`/blog/${post.id}/`}
       />
     ))}
     <Pagination currentPage={currentPage} totalPages={totalPages} baseUrl="/blog" />

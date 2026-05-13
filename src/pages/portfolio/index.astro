@@ -19,7 +19,7 @@ const projects = (await getCollection('projects', ({ data }) => !data.draft))
         date={project.data.date}
         image={project.data.image}
         tags={project.data.tags}
-        href={`/portfolio/${project.slug}/`}
+        href={`/portfolio/${project.id}/`}
       />
     ))}
   </div>

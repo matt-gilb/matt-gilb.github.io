@@ -28,3 +28,7 @@ pnpm-debug.log*
 
 # claude local settings
 .claude/
+
+# url parity snapshots for astro 6 upgrade
+urls-before.txt
+urls-after.txt
