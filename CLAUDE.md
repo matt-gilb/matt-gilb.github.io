@@ -4,6 +4,12 @@ Context for working on this project. Covers non-obvious decisions, gotchas, and 
 
 ---
 
+## Changing URLs / route paths
+
+URL changes are fine — just confirm with Matt first (a one-line "rename `/foo/` to `/bar/`?" is enough). When renaming a route, update all of: the directory under `src/pages/`, every `href`/path string in `.astro` and `.ts` files, and any references in this file. Search the full `src/` tree before claiming the rename is done. No redirects are configured, so old URLs will 404 after the change.
+
+---
+
 ## Astro version
 
 This project runs on **Astro 6** (`astro@^6.3.2`). Content collections use the **Content Layer API** via the `glob()` loader from `astro/loaders`, defined in `src/content.config.ts` (note: not `src/content/config.ts` — Astro 6 expects the file at the new location).
@@ -40,7 +46,7 @@ Push to `main` → GitHub Actions builds, runs Pagefind, deploys to GitHub Pages
 Two collections defined in `src/content.config.ts` (both use `loader: glob(...)` from `astro/loaders`):
 
 - **`posts`** — 24 blog posts in `src/content/posts/`; URL pattern `/blog/[slug]/`
-- **`projects`** — 6 build journal posts in `src/content/projects/`; URL pattern `/portfolio/[slug]/`
+- **`projects`** — 6 build journal posts in `src/content/projects/`; URL pattern `/projects/[slug]/`
 
 Projects have an extra `status` field (`'active' | 'completed' | 'archived'`).
 

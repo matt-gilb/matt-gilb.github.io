@@ -8,7 +8,7 @@ tags:   [Scuba, Travel, Reports]
 
 # Overview
 
-This was our second trip to [CoCo View Resort](https://www.cocoviewresort.com){:target="_blank"}. We enjoyed our first trip so much, we just had to go back! For a look at our first trip, be sure to take a look at [my post](/blog/2022-11-20-ccv1-trip-report/) about it.
+This was our second trip to [CoCo View Resort](https://www.cocoviewresort.com). We enjoyed our first trip so much, we just had to go back! For a look at our first trip, be sure to take a look at [my post](/blog/2022-11-20-ccv1-trip-report/) about it.
 
 Roatan is a unique place. The reef structure and marine life varies depending on where you're diving on the island. It can be separated into four areas: the west end, the north shore, the east end, and the south shore. CoCo View typically only goes to sites located on the south shore—though special trips can be arranged that go out to the east end.
 

@@ -8,7 +8,7 @@ tags:  [Scuba, Travel, Reports]
 
 # Overview
 
-On November 20th 2022 I discovered for myself why so many of my fellow divers have been raving about [CoCo View Resort](https://www.cocoviewresort.com){:target="_blank"}, on the island of Roatan off the coast of Honduras. The resort boasts the best (and the most) diving on the island. They have amazing staff, who have been there for years, and they offer unlimited shore diving in addition to two boat trips per day to dive the offshore reefs.
+On November 20th 2022 I discovered for myself why so many of my fellow divers have been raving about [CoCo View Resort](https://www.cocoviewresort.com), on the island of Roatan off the coast of Honduras. The resort boasts the best (and the most) diving on the island. They have amazing staff, who have been there for years, and they offer unlimited shore diving in addition to two boat trips per day to dive the offshore reefs.
 
 ![](/images/posts/ccv_roatan_01/CCV_map.png)
 

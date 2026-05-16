@@ -8,7 +8,7 @@ tags:   [Scuba, Travel, Reports]
 
 # Overview
 
-Becca and I spent a week on the island of Bonaire diving with [Buddy Dive Resort](https://buddydive.com){:target="_blank"} for my birthday. This was our first time to the island of Bonaire. We stayed in a suite at the resort which had a kitchen, living room, and private patio. It was really nice to have all these amenities in addition to everything the resort offered. I think we only ended up cooking for ourselves twice though.
+Becca and I spent a week on the island of Bonaire diving with [Buddy Dive Resort](https://buddydive.com) for my birthday. This was our first time to the island of Bonaire. We stayed in a suite at the resort which had a kitchen, living room, and private patio. It was really nice to have all these amenities in addition to everything the resort offered. I think we only ended up cooking for ourselves twice though.
 
 ![map of bonaire showing where the resort is](/images/posts/bdr_01/bdr_map.png)
 

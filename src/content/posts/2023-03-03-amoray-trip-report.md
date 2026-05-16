@@ -8,7 +8,7 @@ tags:   [Scuba, Travel, Reports]
 
 # Overview
 
-For Becca's birthday, we headed south from our home in Atlanta, to the Florida Keys for a few days of diving with [Amoray Dive Resort](https://www.amoray.com){:target="_blank"}, on Key Largo. We started our trip with a stay in Rivera Beach, Florida to check out Phil Foster Park and the Blue Heron Bridge. This is a world-famous muck-diving site with tons of unique critters to see. We got dinner for Becca's birthday at [Planta](https://www.plantarestaurants.com/location/planta-west-palm-beach/){:target="_blank"} in West Palm Beach. Unfortunately, things didn't work out and we missed our chance to dive at the bridge. You can only dive at high-slack tide
+For Becca's birthday, we headed south from our home in Atlanta, to the Florida Keys for a few days of diving with [Amoray Dive Resort](https://www.amoray.com), on Key Largo. We started our trip with a stay in Rivera Beach, Florida to check out Phil Foster Park and the Blue Heron Bridge. This is a world-famous muck-diving site with tons of unique critters to see. We got dinner for Becca's birthday at [Planta](https://www.plantarestaurants.com/location/planta-west-palm-beach/) in West Palm Beach. Unfortunately, things didn't work out and we missed our chance to dive at the bridge. You can only dive at high-slack tide
 
 ## Dive Sites & Conditions
 

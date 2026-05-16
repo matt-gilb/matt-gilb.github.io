@@ -27,7 +27,7 @@ export async function getStaticPaths() {
   };
 
   posts.forEach(p => addEntry(p, '/blog/'));
-  projects.forEach(p => addEntry(p, '/portfolio/'));
+  projects.forEach(p => addEntry(p, '/projects/'));
 
   return Object.entries(tagMap).map(([tag, { label, entries }]) => ({
     params: { tag },

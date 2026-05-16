@@ -23,39 +23,55 @@ const formattedDate = date.toLocaleDateString('en-US', {
 ---
 
 <Base title={title} description={description} image={image} type="article">
-  <article class="container">
-    <header class="post-header">
-      <div class="post-meta">
-        <time datetime={date.toISOString()}>{formattedDate}</time>
-      </div>
-      <h1>{title}</h1>
-      <TagList tags={tags} />
-    </header>
-
-    {image && (
-      <img class="post-hero" src={image} alt="" loading="eager" decoding="async" />
+  <article>
+    {image ? (
+      <header
+        class="post-hero"
+        style={`background-image: url(${image})`}
+        role="banner"
+      >
+        <div class="post-hero-inner container">
+          <div class="post-meta">
+            <time datetime={date.toISOString()}>{formattedDate}</time>
+          </div>
+          <h1>{title}</h1>
+          {description && <p class="post-hero-desc">{description}</p>}
+          <TagList tags={tags} />
+        </div>
+      </header>
+    ) : (
+      <header class="post-header container">
+        <div class="post-meta">
+          <time datetime={date.toISOString()}>{formattedDate}</time>
+        </div>
+        <h1>{title}</h1>
+        {description && <p class="post-hero-desc">{description}</p>}
+        <TagList tags={tags} />
+      </header>
     )}
 
-    <div class="prose">
-      <slot />
-    </div>
+    <div class="container">
+      <div class="prose">
+        <slot />
+      </div>
 
-    <footer class="post-footer">
-      <nav class="post-nav" aria-label="Post navigation">
-        {prev && (
-          <a href={prev.href} class="post-nav-link post-nav-link--prev">
-            <span class="post-nav-label">← Previous</span>
-            <span class="post-nav-title">{prev.title}</span>
-          </a>
-        )}
-        {next && (
-          <a href={next.href} class="post-nav-link post-nav-link--next">
-            <span class="post-nav-label">Next →</span>
-            <span class="post-nav-title">{next.title}</span>
-          </a>
-        )}
-      </nav>
-    </footer>
+      <footer class="post-footer">
+        <nav class="post-nav" aria-label="Post navigation">
+          {prev && (
+            <a href={prev.href} class="post-nav-link post-nav-link--prev">
+              <span class="post-nav-label">← Previous</span>
+              <span class="post-nav-title">{prev.title}</span>
+            </a>
+          )}
+          {next && (
+            <a href={next.href} class="post-nav-link post-nav-link--next">
+              <span class="post-nav-label">Next →</span>
+              <span class="post-nav-title">{next.title}</span>
+            </a>
+          )}
+        </nav>
+      </footer>
+    </div>
   </article>
 </Base>
 
@@ -82,14 +98,66 @@ const formattedDate = date.toLocaleDateString('en-US', {
 
 <style>
   .post-header { padding-block: 2.5rem 1.5rem; }
-  .post-meta { font-size: 0.875rem; opacity: 0.65; margin-bottom: 0.75rem; }
+  .post-meta { font-size: 0.875rem; opacity: 0.85; margin-bottom: 0.75rem; }
   .post-header h1 { margin-bottom: 0.75rem; }
+  .post-hero-desc {
+    font-size: 1.0625rem;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin: 0 0 1rem;
+    max-width: 50ch;
+  }
+
   .post-hero {
+    position: relative;
+    min-height: 50vh;
     width: 100%;
-    max-height: 480px;
-    object-fit: cover;
-    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
     margin-bottom: 2.5rem;
+    color: #fff;
+    isolation: isolate;
+  }
+  .post-hero-inner :global(*) {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85), 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+  .post-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.6) 35%,
+      rgba(0, 0, 0, 0.2) 70%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: -1;
+  }
+  .post-hero-inner {
+    width: 100%;
+    padding-block: 2.5rem;
+  }
+  .post-hero h1 {
+    color: #fff;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  }
+  .post-hero .post-meta {
+    color: #fff;
+    opacity: 0.9;
+  }
+  .post-hero :global(.tag) {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    backdrop-filter: blur(4px);
+  }
+  .post-hero :global(.tag:hover) {
+    border-color: #fff;
   }
   .post-footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--color-border); }
   .post-nav { display: flex; justify-content: space-between; gap: 1rem; }
