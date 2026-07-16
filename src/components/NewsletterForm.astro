@@ -1,0 +1,125 @@
+---
+// src/components/NewsletterForm.astro
+const ENDPOINT = 'https://resend-newsletter-api.vercel.app/api/subscribe';
+const TURNSTILE_SITE_KEY = '0x4AAAAAAD2y9SYQG3JM5EVduUdM-dpzQQg';
+---
+
+<div class="newsletter">
+  <p class="newsletter-label">Get new posts in your inbox</p>
+  <form class="newsletter-form" data-endpoint={ENDPOINT}>
+    <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address" />
+    <button type="submit">Subscribe</button>
+    <!-- Honeypot: hidden from humans, tempting to bots -->
+    <div style="position:absolute;left:-5000px" aria-hidden="true">
+      <input type="text" name="hp" tabindex="-1" autocomplete="off" value="" />
+    </div>
+    <div class="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY} data-size="flexible"></div>
+    <p class="newsletter-status" role="status" aria-live="polite"></p>
+  </form>
+</div>
+
+<script>
+  // Astro bundles this as a module script, so document.currentScript is null —
+  // select the form directly (it appears once, in the footer).
+  const form = document.querySelector('.newsletter-form');
+  if (form) {
+    const emailInput = form.querySelector('input[name="email"]');
+    const hpInput = form.querySelector('input[name="hp"]');
+    const status = form.querySelector('.newsletter-status');
+    const button = form.querySelector('button');
+    const endpoint = form.dataset.endpoint;
+
+    // Lazy-load Turnstile only when the visitor engages the field.
+    let turnstileRequested = false;
+    function loadTurnstile() {
+      if (turnstileRequested) return;
+      turnstileRequested = true;
+      const s = document.createElement('script');
+      s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+      s.async = true;
+      s.defer = true;
+      document.head.appendChild(s);
+    }
+    emailInput.addEventListener('focus', loadTurnstile, { once: true });
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      status.textContent = '';
+
+      const token = window.turnstile?.getResponse?.() || '';
+      if (!token) {
+        status.textContent = 'Please wait a moment for verification, then try again.';
+        loadTurnstile();
+        return;
+      }
+
+      button.disabled = true;
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: emailInput.value.trim(),
+            turnstileToken: token,
+            hp: hpInput.value,
+          }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (res.ok && data.ok) {
+          status.textContent = 'Almost there — check your inbox to confirm your subscription.';
+          form.reset();
+        } else {
+          status.textContent = data.error || 'Something went wrong. Please try again.';
+        }
+      } catch {
+        status.textContent = 'Network error. Please try again.';
+      } finally {
+        window.turnstile?.reset?.();
+        button.disabled = false;
+      }
+    });
+  }
+</script>
+
+<style>
+  .newsletter-label {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+  }
+  .newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .newsletter-form input[type="email"] {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background: var(--color-bg-subtle);
+    color: var(--color-text);
+    font-size: 0.9rem;
+    min-width: 220px;
+  }
+  .newsletter-form button {
+    padding: 0.5rem 1rem;
+    background: var(--color-accent);
+    color: var(--color-bg);
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .newsletter-form button:hover { opacity: 0.85; }
+  .newsletter-form button:disabled { opacity: 0.5; cursor: default; }
+  .newsletter-status {
+    flex-basis: 100%;
+    font-size: 0.8rem;
+    color: var(--color-text);
+    margin: 0;
+    min-height: 1rem;
+  }
+</style>
