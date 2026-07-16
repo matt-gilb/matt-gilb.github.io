@@ -90,7 +90,7 @@ YouTube iframes have hardcoded `width`/`height` attributes from the YouTube embe
 
 ## Third-party integrations
 
-- **Mailchimp** endpoint is in `src/components/Footer.astro`
+- **Resend newsletter signup** — double opt-in via a separate Vercel serverless project (`resend-newsletter-api`, private repo under `matt-gilb`). The footer form lives in `src/components/NewsletterForm.astro` and POSTs to `https://resend-newsletter-api.vercel.app/api/subscribe`; confirmation redirects to `/subscribed/` or `/subscribe/expired/`. On confirm, the function opts the contact into the Resend **Newsletter topic** (`c193f63b-2c93-4f6f-b613-6761c1955f49`) and fires the `user.welcome` automation. The Resend API key lives only in Vercel env vars, never in this repo. Sending domain: `news.mattgilbert.co`. Spam protection: Cloudflare Turnstile (public site key in the component) + honeypot.
 - **Formspree** form ID `xzbwdyro` is in `src/pages/contact.astro` (action: `https://formspree.io/f/xzbwdyro`)
 - **RSS** feed generated at `/feed.xml` by `src/pages/feed.xml.ts` — posts only, sorted date desc
 
