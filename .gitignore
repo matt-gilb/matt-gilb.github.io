@@ -30,6 +30,8 @@ superpowers/
 # claude local settings
 .claude/
 
+CLAUDE.md
+
 # url parity snapshots for astro 6 upgrade
 urls-before.txt
 urls-after.txt
